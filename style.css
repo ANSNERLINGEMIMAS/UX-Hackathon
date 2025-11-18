@@ -1,0 +1,59 @@
+:root{
+  --accent: #ff2d2d; /* red accent */
+  --card: #2b2b2b;
+  --muted: #b5b5b5;
+}
+
+body {
+  background: #0b0b0d;
+  color: #e9e9ea;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+a { text-decoration: none; }
+
+/* Accent span in brand */
+.accent {
+  color: var(--accent);
+  background: linear-gradient(90deg, rgba(255,45,45,0.08), transparent);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+/* Cards */
+.card {
+  background: var(--card) !important;
+}
+
+/* Muted text */
+.text-muted { color: var(--muted) !important; }
+
+/* Buttons */
+.btn-danger {
+  background: var(--accent);
+  border: none;
+  color: #111;
+}
+
+/* Form dark inputs (bootstrap override) */
+.form-control-dark {
+  background: #141417;
+  border: 1px solid #2d2d2d;
+  color: #e9e9ea;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 575px){
+  .display-5 { font-size: 1.8rem; }
+}
+.add-to-cart {
+  transition: 0.2s ease;
+}
+
+.add-to-cart.added {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
